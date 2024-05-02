@@ -1,0 +1,59 @@
+.MainPage-page {
+  font-family: Arial, sans-serif;
+  color: #333; /* Dark grey for text for better readability */
+  background-color: #f8f9fa; /* Light background color */
+  padding: 20px;
+}
+
+.data-table-container {
+  background-color: #fff; /* White background for the content area */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  border-radius: 5px; /* Rounded corners for modern look */
+  padding: 20px;
+  margin: 20px auto; /* Center the table container */
+  max-width: 960px; /* Max width and auto margin for centering */
+}
+
+.data-table-content h1 {
+  color: #007bff; /* GoDaddy blue for headings */
+  margin-bottom: 20px;
+}
+
+.facebook-table {
+  width: 100%; /* Full width tables */
+  border-collapse: collapse; /* Remove space between borders */
+  margin-bottom: 20px;
+}
+
+.facebook-table th,
+.facebook-table td {
+  text-align: left;
+  padding: 12px; /* Spacing inside cells */
+  border-bottom: 1px solid #ddd; /* Light line for row separation */
+}
+
+.facebook-table th {
+  background-color: #f8f9fa; /* Light grey background for headers */
+  color: #333; /* Dark text for contrast */
+}
+
+.facebook-table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+.facebook-table tbody tr:hover {
+  background-color: #ddd; /* Hover effect for rows */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .data-table-container {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .facebook-table {
+    display: block;
+    overflow-x: auto; /* Scrollable table on small screens */
+  }
+}

@@ -1,0 +1,65 @@
+.instrument-selector-container {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  width: 75%; /* Adjusted for better responsiveness */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.instrument-selector-container h2 {
+  color: #333;
+  word-wrap: break-word; /* Ensure text breaks to prevent overflow */
+  margin-bottom: 30px;
+}
+
+.button-group button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  display: inline-block; /* Adjust button display for better flexibility */
+  width: auto; /* Adjust width to content */
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.instrument-image {
+  max-width: 50%; /* Allows image to be fully responsive */
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .instrument-selector-container {
+    width: 95%; /* More width on smaller devices for better utilization of space */
+    padding: 10px; /* Reduced padding */
+  }
+
+  .button-group button {
+    font-size: 14px; /* Slightly smaller font size for smaller screens */
+    padding: 8px 16px; /* Slightly reduced padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .instrument-selector-container h2 {
+    font-size: 18px; /* Reduced font size for very small devices */
+  }
+}

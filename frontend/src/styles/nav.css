@@ -1,0 +1,63 @@
+/* Navbar overall styling */
+.bg-body-tertiary {
+  background-color: #f8f9fa; /* Light background, adjust color as needed */
+}
+
+/* Navbar brand/logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img.navbar-logo {
+  margin-right: 10px; /* Space between logo and brand name */
+  width: auto; /* Ensures the width is auto-adjusted */
+  height: 70px; /* Default height for desktops and larger screens */
+}
+
+/* Nav link styling */
+.nav-link {
+  color: black; /* Black text for contrast */
+  font-weight: 600; /* Bold text for better readability */
+  margin-right: 20px; /* Space between nav items */
+  font-size: 20px; /* Default font size */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #007bff; /* Highlight color for hover and focus */
+}
+
+/* Toggle button for collapsible navbar in mobile view */
+.navbar-toggler {
+  align-self: flex-start;
+  border-color: #ddd; /* Light border color for toggle button */
+}
+
+.navbar-toggler-icon {
+  /* Custom SVG for darker icon */
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%234a4a4a' viewBox='0 0 30 30'><path stroke='%234a4a4a' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/* Collapsed navbar menu styling */
+.navbar-collapse {
+  justify-content: flex-end; /* Align nav items to the right */
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+  .navbar-brand img.navbar-logo {
+    height: 40px; /* Reduced height for mobile devices */
+  }
+  
+  .nav-link {
+    font-size: 16px; /* Smaller font size for mobile screens */
+    margin-right: 10px; /* Reduced space between nav items */
+  }
+}
+
+/* Additional adjustments for larger screens */
+@media (min-width: 992px) {
+  .nav-link {
+    padding: .5rem 1rem; /* Larger padding for nav items on large screens */
+  }
+}

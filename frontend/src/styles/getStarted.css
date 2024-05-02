@@ -1,0 +1,65 @@
+.MainPage-page {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .MainPage-header {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 50%; /* More fluid width */
+    margin: 20px auto; /* Adjusted margin */
+    padding: 40px 40px; /* Adjusted padding */
+    text-align: center;
+    box-sizing: border-box;
+    flex-grow: 1; /* This will make the container take up the remaining vertical space */
+  }
+  
+  .Logo {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+  }
+  
+  .MainPage-header h1 {
+    font-size: 32px; /* Adjust size for smaller screens below */
+    color: #333;
+  }
+  
+  .MainPage-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .section-detail {
+    margin-bottom: 50px; /* Increase the bottom margin to create more gap between sections */
+  }
+
+  .navbar-logo-instruction {
+    height: 50px; /* Adjust size as needed */
+    vertical-align: middle; /* Align with text */
+  }
+  .MainPage-header h1 {
+    font-size: 32px; /* Adjust size for smaller screens below */
+    color: #333;
+  }

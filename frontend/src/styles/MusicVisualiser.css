@@ -1,0 +1,53 @@
+.MainPage-page {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+  color: #4a4a4a; /* Slightly darker text for better readability */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Score {
+  width: 90%; /* Adjust based on your Score component's requirements */
+  max-width: 1200px; /* Ensures the content is not too stretched on large screens */
+  background-color: #ffffff; /* White background for the score area */
+  border: 1px solid #e1e1e1; /* Light border for definition */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+@media screen and (max-width: 768px) {
+  .Score {
+    width: 100%; /* More screen width usage on smaller devices */
+    padding: 10px;
+  }
+}
+.score-container {
+  background-color: #ffffff; /* White background for the score area */
+padding: 20px; /* Padding around the Score component */
+margin: 20px 0; /* Optional: adds some space above and below the container */
+box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+border-radius: 5px; /* Optional: rounds the corners for a softer look */
+}
+
+.instruction-text {
+  text-align: center;
+  font-size: 24px; /* Adjust the font size as needed */
+}
+.MainPage-page h1 {
+  font-size: 50px; /* Adjust size for smaller screens below */
+  color: #333;
+}
+.MainPage-page h2 {
+  font-size: 32px; /* Adjust size for smaller screens below */
+  color: #333;
+}
