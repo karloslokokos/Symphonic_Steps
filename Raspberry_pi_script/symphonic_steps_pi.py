@@ -87,7 +87,7 @@ def on_message(msg):
     topic = msg.topic
     payload = msg.payload.decode()
 
-    print(f"Start processing message on topic {topic}: {payload}")
+    # print(f"Start processing message on topic {topic}: {payload}")
 
     if topic == "switch_dictionary":
         # Switch dictionary based on the received message
@@ -111,7 +111,7 @@ def on_message(msg):
         # After processing the message, send message to Flask app
         send_message_to_flask_app(topic, payload)
         
-    print(f"End processing message on topic {topic}")
+    # print(f"End processing message on topic {topic}")
 
 
 # Function to send MQTT messages to Flask app
